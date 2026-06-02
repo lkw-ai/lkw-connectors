@@ -1,0 +1,19 @@
+{
+  "name": "@lkw-connectors/totvs",
+  "version": "0.1.0",
+  "description": "TOTVS Protheus connector for LKW workflows. Typed client + resource helpers for pedido_venda, nota_fiscal, romaneio and ocorrencia_carga.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" } },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lkw-connectors/core": "0.1.0"
+  }
+}

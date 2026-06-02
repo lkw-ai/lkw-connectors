@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/totvs" },
+    { "path": "./packages/sap" },
+    { "path": "./packages/bling" },
+    { "path": "./packages/tiny" }
+  ]
+}

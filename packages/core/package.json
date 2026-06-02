@@ -1,0 +1,18 @@
+{
+  "name": "@lkw-connectors/core",
+  "version": "0.1.0",
+  "description": "Shared building blocks for LKW ERP/TMS/WMS connectors: typed HTTP client with retry/auth/pagination, error normalization, webhook receiver helper.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  }
+}

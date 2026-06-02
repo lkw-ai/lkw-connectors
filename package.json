@@ -1,0 +1,31 @@
+{
+  "name": "lkw-connectors",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Monorepo of LKW ERP/TMS/WMS connectors — typed clients for TOTVS, SAP, Bling, Tiny and other systems used by logistics workflows on the LKW platform.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "tsc -b --noEmit && npm run lint --workspaces --if-present",
+    "clean": "tsc -b --clean && rm -rf packages/*/node_modules packages/*/dist node_modules"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkw-ai/lkw-connectors.git"
+  },
+  "homepage": "https://github.com/lkw-ai/lkw-connectors",
+  "keywords": ["lkw", "connector", "totvs", "sap", "bling", "tiny", "erp", "tms", "wms"]
+}
