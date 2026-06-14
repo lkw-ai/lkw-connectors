@@ -132,8 +132,7 @@ Next packages, in order of likely demand:
 | `@lkw-connectors/ssw` | first SSW customer |
 | `@lkw-connectors/datasul` | first Datasul customer (separate from Protheus despite both being TOTVS) |
 | `@lkw-connectors/sankhya` | first Sankhya customer |
-| `@lkw-connectors/siga` | when ARCOM unlocks API or 2nd SIGA customer |
-| `@lkw-connectors/conexos` | first Conexos customer (CRM logístico comum) |
+| `@lkw-connectors/conexos` | first Conexos customer (CRM logístico) |
 
 Repo-level criteria (from
 `lkw/.docs/roadmap-bridges-runtimes-mocks.md`): only ship a new package
