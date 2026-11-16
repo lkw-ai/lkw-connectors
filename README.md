@@ -12,9 +12,9 @@ directly from your own TypeScript code (workers, scripts, FDE work).
 | Package | System | Auth | Status |
 | --- | --- | --- | --- |
 | `@lkw-connectors/core` | shared HTTP client + auth + paginate | — | 0.1.0 |
-| `@lkw-connectors/totvs` | TOTVS Protheus REST (pedidos / notas / romaneios / ocorrências) | Basic / LDAP | 0.1.0 — scaffold |
+| `@lkw-connectors/totvs` | TOTVS Protheus REST (sales orders / invoices / cargo manifests / occurrences) | Basic / LDAP | 0.1.0 — scaffold |
 | `@lkw-connectors/sap` | SAP S/4HANA OData v2 (Sales, Outbound Delivery, Shipment) | Basic + CSRF | 0.1.0 — scaffold |
-| `@lkw-connectors/bling` | Bling API v3 (pedidos/vendas, NFe, expedições) | OAuth2 Bearer | 0.1.0 — scaffold |
+| `@lkw-connectors/bling` | Bling API v3 (sales orders, NF-e invoices, shipments) | OAuth2 Bearer | 0.1.0 — scaffold |
 | `@lkw-connectors/tiny` | Tiny ERP v3 public-api | OAuth2 Bearer | 0.1.0 — scaffold |
 
 > **"Scaffold" disclaimer:** the structure, types and endpoints are written
@@ -54,7 +54,7 @@ for await (const p of totvs.pedidos.iterate({ status: 'LIBERADO' })) {
   console.log(p.numero, p.valor_total);
 }
 
-// Create + ação
+// Create + action
 const novo = await totvs.pedidos.create({ /* ... */ });
 await totvs.pedidos.liberar(novo.numero);
 ```
@@ -132,7 +132,7 @@ Next packages, in order of likely demand:
 | `@lkw-connectors/ssw` | first SSW customer |
 | `@lkw-connectors/datasul` | first Datasul customer (separate from Protheus despite both being TOTVS) |
 | `@lkw-connectors/sankhya` | first Sankhya customer |
-| `@lkw-connectors/conexos` | first Conexos customer (CRM logístico) |
+| `@lkw-connectors/conexos` | first Conexos customer (logistics CRM) |
 
 Repo-level criteria (from
 `lkw/.docs/roadmap-bridges-runtimes-mocks.md`): only ship a new package

@@ -1,6 +1,7 @@
 /**
  * Subset of Bling v3 response shapes — only the fields LKW logistics
- * workflows typically need (pedido, nota, expedição).
+ * workflows typically need (Pedido = sales order, Nota = fiscal invoice,
+ * Expedição = shipment).
  *
  * Bling envelopes responses in `{ data: ... }` or `{ pagination, data }`.
  */

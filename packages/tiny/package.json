@@ -1,7 +1,7 @@
 {
   "name": "@lkw-connectors/tiny",
   "version": "0.1.0",
-  "description": "Tiny ERP (api v3 OAuth2) connector for LKW workflows. Typed resources for pedidos, notas e expedições.",
+  "description": "Tiny ERP (api v3 OAuth2) connector for LKW workflows. Typed resources for pedidos (orders), notas (invoices), and expedições (shipments).",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
