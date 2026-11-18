@@ -8,10 +8,10 @@
  *
  * Public surface:
  *   - TotvsClient            base client
- *   - client.pedidos         pedidos de venda
- *   - client.notas           notas fiscais
- *   - client.romaneios       romaneios de carga
- *   - client.ocorrencias     ocorrências de carga
+ *   - client.pedidos         sales orders (pedidos de venda)
+ *   - client.notas           fiscal invoices (notas fiscais)
+ *   - client.romaneios       cargo manifests (romaneios de carga)
+ *   - client.ocorrencias     cargo occurrences (ocorrências de carga)
  *
  * Each resource exposes list/get/create/update/cancel where applicable.
  * Pagination follows TOTVS convention: `page` + `pageSize` + `hasNext`.

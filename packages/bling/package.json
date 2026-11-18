@@ -1,7 +1,7 @@
 {
   "name": "@lkw-connectors/bling",
   "version": "0.1.0",
-  "description": "Bling API v3 connector for LKW workflows. OAuth2 + typed resources for pedidos, notas fiscais e expedições.",
+  "description": "Bling API v3 connector for LKW workflows. OAuth2 + typed resources for pedidos (orders), notas fiscais (fiscal invoices), and expedições (shipments).",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
